@@ -1,0 +1,80 @@
+.portfolio {
+    padding: 6.25rem 0 9.375rem;
+
+    // &__container {}
+
+    &__title {
+        margin-bottom: 3.125rem;
+        text-align: center;
+    }
+
+    &__content {
+        padding: 3.125rem;
+        margin: 0 auto;
+        max-width: 60.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        background: $bg-body-2;
+        border-radius: 29px;
+    }
+
+    &__img {
+        border-radius: 29px;
+        overflow: hidden;
+    }
+
+    &__text {
+        max-width: 18.5rem;
+        text-align: center;
+
+        & > *:not(:last-child) {
+            margin-bottom: 1.5625rem;
+        }
+    }
+
+    &__text-title {
+        font-size: 1.5rem;
+        line-height: 1.21; 
+    }
+
+    &__text-description {
+        line-height: 1.17;
+    }
+    
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        line-height: 1.17;
+        color: $accent-1;
+        transition: .4s;
+
+        &:visited {
+            color: $accent-1;
+        }
+        &:hover,
+        &:active {
+            transform: translateX(5px);
+        }
+    }
+
+    // &__link-text {}
+
+    // &__link-icon {}
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 0;
+    opacity: 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    padding: 12px;
+    width: 60px;
+    height: 60px;
+    background: $gradient-accent;
+    border-radius: 50%;
+} 

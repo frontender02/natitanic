@@ -1,0 +1,34 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: $ff-main;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: $white;
+    background: $bg-body-1;
+}
+body.lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+._container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.bg-2 {
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+}

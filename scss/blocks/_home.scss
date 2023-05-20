@@ -1,0 +1,119 @@
+.home {
+    color: $light-grey;
+    // overflow: hidden;
+    
+    &__container {
+        position: relative;
+        padding-top: 7.0625rem;
+    }
+
+    &__content {
+        padding-bottom: 8.875rem;
+        max-width: 27.9375rem;
+        position: relative;
+        z-index: 5;
+
+        & > *:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+    }
+    
+    &__hello {
+        display: block;
+        font-family: $ff-secondary;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 1.125;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: $ff-secondary;
+        font-weight: 700;
+        font-size: 4.5rem;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        padding: 0.8125rem;
+        width: 12.5rem;
+        display: inline-block;
+        font-family: $ff-secondary;
+        font-weight: 700;
+        line-height: 1.12;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+        background: $gradient-accent;
+        border-radius: 6px;
+        box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+        transition: .4s;
+
+        &:hover {
+            transform: translate(5px, 5px);
+            box-shadow: 0px 7px 30px rgba(226, 158, 0, 0.48);
+        }
+        &:visited {
+            color: $black;
+        }
+    }
+    
+    &__description {
+        line-height: 1.17; 
+    }
+    
+    &__box {
+        max-width: 39.5rem;
+        width: 100%;
+        min-height: 39.5rem;
+        position: absolute;
+        bottom: 0;
+        right: -3.125rem;
+    }
+    
+    &__img-hero {
+        position: absolute;
+        bottom: 0;
+        left: 19%;
+    }
+    
+    &__skills-icon {
+        position: absolute;
+    }
+    
+    &__skills-icon--ps {
+        left: 8%;
+        bottom: 12%;
+    }
+
+    &__skills-icon--ux {
+        left: 0;
+        top: 42%;
+    }
+
+    &__skills-icon--code {
+        top: 15%;
+        left: 11%;
+    }
+    
+    &__skills-icon--ui {
+        top: 8%;
+        right: 12%;
+    }
+    
+    &__ellipse {
+        max-width: 35.9375rem;
+        width: 100%;
+        max-height: 35.9375rem;
+        height: 100%;
+        background: $bg-body-1;
+        border: 4.1875rem solid $accent-2;
+        filter: drop-shadow(0px 0px 152px rgba(0, 196, 240, 0.42));
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}

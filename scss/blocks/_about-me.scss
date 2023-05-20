@@ -1,0 +1,121 @@
+.about-me {
+    padding: 3.125rem 0 9.375rem;
+
+    &__container {
+        position: relative;
+    }
+
+    &__text {
+        max-width: 31rem;
+        margin-left: auto;
+        margin-right: 15.4375rem;
+        position: relative;
+        z-index: 11;
+    }
+    
+    &__title {
+        position: absolute;
+        top: -1.6875rem;
+        left: 3.9375rem;
+    }
+    
+    &__description {
+        padding: 3.9375rem;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        background-color: $grey;
+        border-radius: 14px;
+    }
+    
+    &__img {
+        padding: 1.8125rem;
+        display: inline-block;
+        border-radius: 14px;
+        background-color: $grey;
+        position: absolute;
+        z-index: 12;
+        
+        img {
+            box-shadow: 0px 0px 0px 6px #686868;
+        }
+
+        &--1 {
+            top: -2.5rem;
+            left: 8.4375rem;
+        }
+        &--2 {
+            left: 10.625rem;
+            bottom: -2.5rem;
+        }
+        &--3 {
+            right: -3.125rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__decor {
+        max-width: var(--width);
+        max-height: var(--height);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: $bg-body-2;
+            border-radius: 50%;
+            z-index: 9;
+        }
+
+        &--white {
+            --width: 49.5rem;
+            --height: 49.5rem;
+            background-color: $white;
+            filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25));
+            left: -2.8125rem;
+            top: 0;
+
+            &::after {
+                max-width: 38.125rem;
+                max-height: 38.125rem;
+            }
+        }
+        &--orange {
+            --width: 22.25rem;
+            --height: 22.25rem;
+            background-color: $accent-1;
+            filter: drop-shadow(0px 4px 70px rgba(226, 162, 0, 0.25));
+            right: 0;
+            top: -1.5rem;
+
+            &::after {
+                max-width: 18.125rem;
+                max-height: 18.125rem;
+            }
+        }
+        &--blue {
+            --width: 30.375rem;
+            --height: 30.375rem;
+            background-color: $accent-2;
+            filter: drop-shadow(0px 4px 70px rgba(0, 193, 236, 0.25));
+            right: 0;
+            bottom: -12%;
+
+            &::after {
+                max-width: 23.125rem;
+                max-height: 23.125rem;
+            }
+        }
+    }
+}
